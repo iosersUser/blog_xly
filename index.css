@@ -1,0 +1,235 @@
+/*重置一些会影响页面排版的样式：CSS reset*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li{
+	margin:0;
+	padding:0;
+}
+ul,ol{
+	list-style:none;
+}
+
+/*向右浮动*/
+.rt{
+	float:right;
+}
+/*向左浮动*/
+.lt{
+	float:left;
+}
+
+
+
+/*我的博客，nav导航*/
+header{
+/***************放着，还加东西呢***************/
+	background:url("images/banner.jpg") no-repeat fixed;
+	background-size:cover;
+}
+nav{
+	height:50px;
+	background:rgba(0,0,0,0.15);
+	color:#fff;
+}
+#user img{
+	border-radius:50%;
+	margin-top:5px;
+	margin-left:10px;
+	/*垂直对齐方式，只对部分行内块元素和表格元素起作用*/
+	vertical-align:top;
+}
+#user h2{
+	display:inline-block;
+	line-height:50px;
+}
+
+nav ul li{
+	float:left;
+	/*让文字垂直居中显示*/
+	line-height:50px;
+	padding:0 10px;
+}
+nav ul li:hover{
+	background:rgba(0,0,0,0.8);
+}
+
+/*banner部分*/
+#banner{
+	height:650px;
+	text-align:center;
+	padding-top:120px;
+	color:#fff;
+}
+#banner>h1{
+	border-top:3px solid #fff;
+	border-bottom:3px solid #fff;
+	width:200px;
+	margin:0 auto;
+	font-size:45px;
+}
+#banner>p{
+	width:400px;
+	margin:70px auto;
+	font-size:26px;
+}
+/*input属于行内块元素，可以直接给宽度和高度*/
+#banner>input{
+	width:200px;
+	height:60px;
+	font-size:40px;
+	color:#fff;
+	background:#f00;
+	border:none;
+}
+#banner>h2{
+	font-size:30px;
+	margin-top:70px;
+}
+/*给内容模块添加整体样式*/
+section{
+	color:#fff;
+	text-align:center;
+}
+#content_1{
+	background:#0DB27F;
+	border:1px solid #299674;
+	padding-top:50px;
+}
+#content_1>h2{
+	font-size:40px;
+}
+#content_1>h3{
+	width:600px;
+	font-size:36px;
+	border-bottom:2px solid #299674;
+	margin:0 auto;
+	padding-bottom:15px;
+}
+#content_1>p{
+	width:750px;
+	font-size:20px;
+	margin:0 auto;
+}
+
+#content_1>ul>li{
+	display:inline-block;
+	width:100px;
+	height:100px;
+	border:2px solid #299674;
+	border-radius:50%;
+	margin:60px 30px 60px;
+}
+/*这是content_2部分*/
+#content_2{
+	background:#262A35;
+}
+#content_2>div{
+	 overflow:hidden; 
+}
+#content_2 div.image{
+	float:left;
+	width:40%;
+}
+#content_2 div.image img{
+	 width:100%;
+	 /************解决幽灵空隙的方法******************/
+	 /* font-size:0; */
+	 /*垂直对齐方式****************/
+	 vertical-align:top;
+}
+#content_2 div.des{
+	float:right;
+	width:60%;
+}
+#content_2 div.des>h2{
+	font-size:30px;
+	margin-top:30px;
+}
+#content_2 div.des>h3{
+	font-size:26px;
+}
+#content_2 div.des>p{
+	width:85%;
+	margin:40px auto 0;
+}
+
+/******中间元素*******/
+#content_2 div.middle{
+	background:rgba(255,255,255,0.15);
+}
+#content_2 div.middle>div{
+	float:right;
+}
+/********content_3部分************/
+#content_3{
+	background:#534e93;
+	padding:30px;
+}
+#content_3>h2{
+	font-size:30px;	
+}
+#content_3>p{
+	width:80%;
+	margin:25px auto 20px;
+	font-size:20px;
+}
+#content_3>ul{
+	width:60%;
+	margin:0 auto;
+	overflow:hidden;
+}
+#content_3>ul>li{
+	width:50%;
+	float:left;text-align:left;
+}
+/******footer**************/
+footer{
+	text-align:center;
+	color:#fff;
+}
+#foot_top{
+	height:400px;
+	/* background:#999; */
+}
+#left,#right{
+	width:50%;
+	float:left;
+}
+#left>h2{
+	margin-top:100px;
+	font-size:30px;
+}
+#left>p{
+	margin-top:50px;
+	font-size:20px;
+}
+#right input{
+	width:200px;
+	height:60px;
+	background:#ccc;
+	font-size:45px;
+	color:#fff;
+	margin-top:100px;
+	border:none;
+}
+#right #input1{
+	background:red;
+}
+
+#foot_bottom{
+	height:300px;
+	/* background:#333; */
+	background:rgba(0,0,0,0.6);
+}
+#foot_bottom>ul>li{
+	width:50px;
+	height:50px;
+	background:#ccc;
+	display:inline-block;
+	margin:120px 30px;
+}
+
+footer{
+	background:url("images/banner.jpg") no-repeat fixed;
+	background-size:cover;
+}
+
+
